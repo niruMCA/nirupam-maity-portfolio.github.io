@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nirupam Maity - Resume</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #eef2f7;
+        }
+
+        .container {
+            width: 900px;
+            margin: 30px auto;
+            background: #ffffff;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            margin-right: 25px;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .header-text p {
+            margin: 5px 0;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        h2 {
+            color: #2a5298;
+            border-bottom: 2px solid #2a5298;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        p, li {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #1e3c72;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-img {
+                margin-bottom: 15px;
+            }
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <img src="Image/nirupamPhoto.png" alt="Nirupam Maity" class="profile-img">
+        <div class="header-text">
+            <h1>Nirupam Maity</h1>
+            <p>Unity Developer | Game Developer | .NET Backend Developer</p>
+            <p>📍 Purba Medinipur, West Bengal</p>
+            <p>📞 +91 9749140519 | ✉ maityniru1998@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <h2>Professional Summary</h2>
+        <p>
+            Creative and detail-oriented Unity Developer with 3+ years of experience in 2D game development using Unity & C#. 
+            Strong background in game mechanics, UI implementation, performance optimization, and mobile publishing. 
+            Additionally experienced in .NET Core backend development and REST API development.
+        </p>
+
+        <h2>Work Experience</h2>
+        <div class="section">
+            <strong>Unity Developer</strong><br>
+            GunjanApps Studios and Solutions LLP
+            <ul>
+                <li>Developed multiple 2D mobile games using Unity and C#.</li>
+                <li>Implemented gameplay logic and UI systems.</li>
+                <li>Optimized performance for low-end devices.</li>
+                <li>Integrated ads, in-app purchases, and analytics.</li>
+                <li>Managed Android & iOS deployment.</li>
+            </ul>
+        </div>
+
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://play.google.com/store/apps/details?id=com.petgames.daycaregames.babygames.petcare.toddlergames.dogs.cats.pets.girlgames.elepant" target="_blank">Room Design Game</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.free.kids.cooking.games.girls.burger.donut.toddler" target="_blank">Cooking Game</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.kids.preschool.learning.games" target="_blank">Preschool Learning Game</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.GamesForKids.BabyPreschoolLearning.ToddlerGames" target="_blank">Toddler Educational Game</a></li>
+        </ul>
+
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <ul>
+                <li>Unity 2D/3D</li>
+                <li>C#</li>
+                <li>Game Mechanics & UI</li>
+                <li>Android/iOS Publishing</li>
+                <li>Performance Optimization</li>
+            </ul>
+            <ul>
+                <li>.NET Core</li>
+                <li>REST API</li>
+                <li>Entity Framework</li>
+                <li>MySQL</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </div>
+
+        <h2>Education</h2>
+        <ul>
+            <li>MCA – Vidyasagar University (2023) – 80.24%</li>
+            <li>BCA – Vidyasagar University (2021) – 79.76%</li>
+            <li>Diploma in Computer Science & Technology – WBSCTE (2018) – 73.7%</li>
+        </ul>
+
+    </div>
+</div>
+
+</body>
+</html>
