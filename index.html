@@ -8,8 +8,14 @@
 <body>
 
 <header>
+  
     <h1>Nirupam Maity</h1>
     <p>Unity Developer | Game Developer | .NET Developer</p>
+      <a href="https://drive.google.com/file/d/1NipL0ulCt2y7WBnKMoTT72Sj9RyoPlyK/view?usp=sharing" 
+       class="top-resume-btn" 
+       target="_blank">
+       📄 Download Resume
+    </a>
 </header>
 
 
@@ -108,5 +114,78 @@
     <p>© 2026 Nirupam Maity</p>
 </footer>
 
+<script>
+/* ===============================
+   1. Fade-in Animation on Scroll
+================================= */
+
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+}, { threshold: 0.15 });
+
+sections.forEach(section => {
+    section.classList.add("hidden");
+    observer.observe(section);
+});
+
+
+/* ===============================
+   2. Typing Effect for Header
+================================= */
+
+const text = "Unity Developer | Game Developer | .NET Developer";
+const typingElement = document.querySelector("header p");
+
+let index = 0;
+typingElement.innerHTML = "";
+
+function typeEffect() {
+    if (index < text.length) {
+        typingElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 40);
+    }
+}
+
+window.addEventListener("load", typeEffect);
+
+
+/* ===============================
+   3. Button Ripple Effect
+================================= */
+
+document.querySelectorAll(".resume-btn, .top-resume-btn").forEach(button => {
+    button.addEventListener("click", function(e) {
+        const circle = document.createElement("span");
+        circle.classList.add("ripple");
+
+        const rect = this.getBoundingClientRect();
+        circle.style.left = e.clientX - rect.left + "px";
+        circle.style.top = e.clientY - rect.top + "px";
+
+        this.appendChild(circle);
+
+        setTimeout(() => {
+            circle.remove();
+        }, 600);
+    });
+});
+
+
+/* ===============================
+   4. Parallax Header Effect
+================================= */
+
+window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    header.style.backgroundPositionY = window.scrollY * 0.5 + "px";
+});
+</script>
 </body>
 </html>
